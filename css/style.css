@@ -10,14 +10,18 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+}
+.light-theme {
     background-color: #e9ebec;
+}
 
+.dark-theme {
+    background-color: #3D3D3D;
 }
 
 .header {
     background: linear-gradient(0deg, rgba(233, 235, 236, 1) 33%, rgba(150, 191, 245, 0.7721463585434174) 100%);
 }
-
 .circle {
     width: 50px;
     height: 50px;
@@ -43,19 +47,20 @@ body {
 .h1 {
     font-size: 65px;
     line-height: 60px;
-    color: #3D3D3D;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 2px;
     margin: 20px 20px 5px;
 
+    color: #3D3D3D;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-color: black;
 }
 
 .h2 {
     font-size: 25px;
     line-height: 24px;
-    color: #575757;
     margin: 20px 20px;
+
+    color: #575757;
 }
 
 .h3 {
@@ -74,8 +79,9 @@ body {
 .border {
     max-width: 70%;
     height: 1px;
-    border: solid 1px rgb(169, 153, 153);
     margin: 50px auto;
+
+    border: solid 1px rgb(169, 153, 153);
 }
 
 .section__contacts {
@@ -114,13 +120,21 @@ body {
 
 .footer {
     height: 150px;
+}
+.footer {
     background: linear-gradient(180deg, rgba(233, 235, 236, 1) 33%, rgba(150, 191, 245, 0.7721463585434174) 100%);
 }
-
 .footer__name {
     text-align: center;
     font-size: 30px;
     padding-top: 20px;
+}
+
+body.dark-theme .footer {
+    background:linear-gradient(180deg, rgba(63, 63, 63, 0) 33%, rgba(150, 191, 245, 0.7721463585434174) 100%);
+}
+body.dark-theme .header {
+    background: linear-gradient(0deg, rgba(63, 63, 63, 0) 33%, rgba(150, 191, 245, 0.7721463585434174) 100%);
 }
 
 @media screen and (min-width:850px) {
